@@ -11,7 +11,7 @@ using System.Web.SessionState;
 
 public partial class Account_Login : Page
 {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e
         {
             //RegisterHyperLink.NavigateUrl = "Register";
             ////OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
