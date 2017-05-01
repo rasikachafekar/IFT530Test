@@ -22,7 +22,7 @@ public partial class Account_Login : Page
             //}
         }
 
-        protected void LogIn(object sender, EventArgs e
+        protected void LogIn(object sender, EventArgs e)
         {
             if (IsValid)
             {
@@ -35,8 +35,9 @@ public partial class Account_Login : Page
                 {
                 //IdentityHelper.SignIn(manager, user, RememberMe.Checked);
                 //IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
-                
-                string connStr = ConfigurationManager.ConnectionStrings["IFT530"].ToString();
+
+                //string connStr = ConfigurationManager.ConnectionStrings["IFT530"].ToString();
+                string connStr = ConfigurationManager.ConnectionStrings["PolySoccerTeam"].ToString();
                 SqlConnection conn = new SqlConnection(connStr);
                 //conn.ConnectionString =
                 //"Data Source=LAPTOP-BP5IN1R5;" +

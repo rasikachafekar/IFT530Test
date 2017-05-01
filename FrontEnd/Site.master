@@ -78,7 +78,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <div id="menu" runat="server" visible="false">
-                <asp:HyperLink id="hlSchedules" runat="server" href="#" Text="Schedules"></asp:HyperLink>
+                <asp:HyperLink id="hlSchedules" runat="server" href="/Account/Schedules" Text="Schedule a Match"></asp:HyperLink>
                 <asp:HyperLink id="hlInventory" runat="server" href="#" Text="Inventory"></asp:HyperLink>
                 <asp:HyperLink id="hlManagerTeam" runat="server" href="/Account/ManagerTeam" Text="Manage Team"></asp:HyperLink>
                 <p>

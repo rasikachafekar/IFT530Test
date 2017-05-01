@@ -23,7 +23,8 @@ public partial class Home : System.Web.UI.Page
             string id = Session["ID"].ToString();
             string roleText = "";
 
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["IFT530"].ToString());
+            //SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["IFT530"].ToString());
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["PolySoccerTeam"].ToString());
             SqlCommand cmd = new SqlCommand("sp_PlayerProfile", con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@IndividualID", SqlDbType.Int).Value = id;
